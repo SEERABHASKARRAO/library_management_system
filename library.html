@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management Page</title>
+  <link rel="stylesheet" type="text/css" href="library.css">
+  <script src="library.js" rel="javascript"></script>
+  <link rel="icon" href="front-2.png">
+</head>
+<body>
+    <!-- <div class="loader"></div> -->
+    <div class="form-container">
+        <form class="form" >
+       
+          <h2 id="login">Login</h2>
+          <input type="text" placeholder="Email(abc@gmail.com)" id="email" value="abc@gmail.com">
+          <input type="password" id="enter-pass" placeholder="Enter your Password" style="visibility: hidden;display:none;">
+          <input type="password" id="re-enter-pass" placeholder="Re enter your Password" style="visibility: hidden;display:none;">
+          <input type="password" id="pass" placeholder="Password(abc123)" value="abc123" style="visibility:visible;display:block;">
+          <button type="submit" id="submit_type" onclick="fun()"><a style="text-decoration: none;color:white;" href="index.html">Log in</a> </button>
+          <a class="signup-link" id="description" href="#"  onclick="signup()">Don't have an account?</a>
+        </form> 
+      </div>
+      
+      <div class="main-head">
+      <h1 >Welcome To Library Management System</h1>
+    </div>
+    <script>
+      function fun(){
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+    if(email=="abc@gmail.com" && password=="abc123"){
+      window.location="index.html";
+    }
+}
+    </script>
+</body>
+</html>
